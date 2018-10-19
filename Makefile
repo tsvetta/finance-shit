@@ -1,5 +1,5 @@
 start:
-	npx concurrently --raw "make watch" "open index.html"
+	npx concurrently --raw "make watch" "npx tsc -p . --noEmit --watch" "open index.html"
 
 watch:
 	npx webpack --watch

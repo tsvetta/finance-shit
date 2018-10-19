@@ -25,5 +25,11 @@
       "./types",
       "./node_modules/@types/"
     ]
-  }
+  },
+  "include": [
+    "./node_modules/eff-dom/jsx.d.ts"
+  ],
+  "exclude": [
+    "./eff/"
+  ]
 }

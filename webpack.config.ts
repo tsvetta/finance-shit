@@ -5,7 +5,7 @@ const mode = process.env.NODE_ENV === 'production' ? 'production' : 'development
 
 const config: Configuration = {
   entry: {
-    main: [__dirname],
+    main: [path.join(__dirname, 'src')],
   },
   output: {
     path: path.join(__dirname, 'dist'),
